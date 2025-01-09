@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@use './scss/variables' as var;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var.$Space-Grotesk;
+    list-style-type: none;
+}
+
+body {
+    background-color: var.$Black;
+    background-image: 
+        url(./assets/images/pattern-rings.svg), 
+        url(./assets/images/pattern-circle.svg),
+        url(./assets/images/pattern-rings.svg);
+    background-position: -347px  124px, right -65px top 252px, right -347px bottom 50px;
+    background-repeat: no-repeat;
+}

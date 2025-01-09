@@ -1,0 +1,10 @@
+<div class="header-footer">
+    <h1 class="header-footer__title">adamkeyes</h1>
+    <ul class="header-footer__links-list">
+        <li class="header-footer__link-item" *ngFor="let link of socialMediaLinks">
+            <a [href]="link.link" class="header-footer__link" target="_blank" [attr.aria-label]="link.socialMedia" >
+                <img [src]="link.icon" [alt]="link.socialMedia">
+            </a>
+        </li>
+    </ul>
+</div>
