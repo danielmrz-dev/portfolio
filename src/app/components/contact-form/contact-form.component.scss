@@ -1,0 +1,45 @@
+@use "../../../scss/variables" as var;
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var.$White;
+    padding: 1rem;
+    gap: 3.125rem;
+    position: relative;
+    overflow: hidden;
+    &__text {
+        display: grid;
+        gap: 1.25rem;
+    }
+    &__title {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        letter-spacing: -1.14px;
+        font-weight: 600;
+    }
+    &__description {
+        color: var.$Grey;
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+    &__inputs {
+        display: grid;
+        gap: 2rem;
+    }
+    &__input {
+        background-color: transparent;
+        color: var.$White;
+        border: none;
+        border-bottom: 1px solid var.$White;
+        padding: .80rem;
+        font-size: 1rem;
+        line-height: 26px;
+        max-width: 100%;
+    }
+    &__submit-btn {
+        align-self: flex-end;
+        justify-self: end;
+    }
+}

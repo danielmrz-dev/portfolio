@@ -1,0 +1,12 @@
+@use "./../scss/variables" as var;
+
+footer {
+    background-color: var.$Dark-Grey;
+    padding-bottom: 40px;
+    .divider {
+        width: calc(100% - 2rem);
+        margin: 87px auto 39px;
+        height: 1px;
+        background-color: #fff;
+    }
+}
