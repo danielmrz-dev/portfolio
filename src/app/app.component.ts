@@ -9,7 +9,7 @@ import { ContactFormComponent } from "./components/contact-form/contact-form.com
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderFooterComponent, DevIntroductionComponent, TechnologiesListComponent, ProjectsListComponent, ContactFormComponent],
+  imports: [HeaderFooterComponent, DevIntroductionComponent, TechnologiesListComponent, ProjectsListComponent, ContactFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

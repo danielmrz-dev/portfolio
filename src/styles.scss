@@ -14,6 +14,14 @@ body {
         url(./assets/images/pattern-rings.svg), 
         url(./assets/images/pattern-circle.svg),
         url(./assets/images/pattern-rings.svg);
-    background-position: -347px  124px, right -65px top 252px, right -347px bottom 50px;
-    background-repeat: no-repeat;
+    background-position: -347px  124px, right -65px top 252px, right -347px top 1278px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-position: -270px  86px, right -65px top 550px, right -347px top 1278px;
+        background-size: 530px 129px, 0 0, 530px 129px;
+    }
+
 }

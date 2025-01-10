@@ -7,8 +7,8 @@
     color: var.$White;
     padding: 1rem;
     gap: 3.125rem;
-    position: relative;
-    overflow: hidden;
+    background: url(../../../assets/images/pattern-rings.svg) no-repeat left top;
+    background-position: left -347px bottom 14px;
     &__text {
         display: grid;
         gap: 1.25rem;

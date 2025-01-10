@@ -43,5 +43,52 @@
     &__description {
         color: var.$Grey;
     }
+    .circle {
+        display: none;
+    }
+}
 
+@media screen and (min-width: 768px) {
+    .introduction {
+        text-align: start;
+        align-items: start;
+        justify-content: flex-start;
+        padding: 3.8rem 2rem 2rem 2rem;
+        overflow: hidden;
+        &__image-container {
+            position: static;
+        }
+        &__profile-picture {
+            max-width: 322px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &__text {
+            gap: 3.75rem;
+            max-width: 444px;
+            .btn {
+                transform: translateY(-10px);
+            }
+        }
+        &__title {
+            font-size: 4.5rem;
+            letter-spacing: -2.05px;
+            line-height: 4.5rem;
+            .nice-to {
+                display: block;
+            }
+        }
+        &__description {
+            color: var.$Grey;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+        .circle {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 469px;
+        }
+    }
 }

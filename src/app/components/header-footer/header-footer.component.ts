@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ISocialMediaLink } from '../../interfaces/social-media-link.interface';
+import { ISocialMediaLink } from '../../models/social-media-link.interface';
 import { CommonModule } from '@angular/common';
 
 @Component({

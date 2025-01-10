@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ButtonWithBorderBottomComponent } from "../button-with-border-bottom/button-with-border-bottom.component";
 import { CommonModule } from '@angular/common';
+import { ProjectsList } from '../../models/projects-list.type';
 
 @Component({
   selector: 'app-projects-list',
@@ -10,7 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './projects-list.component.scss'
 })
 export class ProjectsListComponent {
-  projectsList = [
+  projectsList: ProjectsList = [
     {
       images: {
         small: 'thumbnail-project-1-small.webp',
@@ -18,6 +19,8 @@ export class ProjectsListComponent {
       },
       name: 'Design Portfolio',
       technologies: ['HTML', 'CSS'],
+      liveSite: '',
+      repository: ''
     },
     {
       images: {
@@ -26,6 +29,8 @@ export class ProjectsListComponent {
       },
       name: 'E-Learning Landing Page',
       technologies: ['HTML', 'CSS'],
+      liveSite: '',
+      repository: ''
     },
     {
       images: {
@@ -34,6 +39,8 @@ export class ProjectsListComponent {
       },
       name: 'Todo Web App',
       technologies: ['HTML', 'CSS', 'Javascript'],
+      liveSite: '',
+      repository: ''
     },
     {
       images: {
@@ -42,6 +49,8 @@ export class ProjectsListComponent {
       },
       name: 'Entertainment Web App',
       technologies: ['HTML', 'CSS', 'Javascript'],
+      liveSite: '',
+      repository: ''
     },
     {
       images: {
@@ -50,6 +59,8 @@ export class ProjectsListComponent {
       },
       name: 'Memory Game',
       technologies: ['HTML', 'CSS', 'Javascript'],
+      liveSite: '',
+      repository: ''
     },
     {
       images: {
@@ -58,6 +69,8 @@ export class ProjectsListComponent {
       },
       name: 'Art Gallery Showcase',
       technologies: ['HTML', 'CSS', 'Javascript'],
+      liveSite: '',
+      repository: ''
     },
   ]
 }
