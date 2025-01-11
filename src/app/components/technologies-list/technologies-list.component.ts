@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TechnologiesList } from '../../models/technologies-list.type';
 
 @Component({
   selector: 'app-technologies-list',
@@ -9,30 +10,30 @@ import { Component } from '@angular/core';
   styleUrl: './technologies-list.component.scss'
 })
 export class TechnologiesListComponent {
-  technologiesList = [
+  technologiesList: TechnologiesList = [
     {
       technology: "HTML",
-      XpYears: 4,
+      xpYears: 4,
     },
     {
       technology: "CSS",
-      XpYears: 4,
+      xpYears: 4,
     },
     {
       technology: "Javascript",
-      XpYears: 4,
+      xpYears: 4,
     },
     {
       technology: "Accessibility",
-      XpYears: 4,
+      xpYears: 4,
     },
     {
       technology: "React",
-      XpYears: 3,
+      xpYears: 3,
     },
     {
       technology: "Sass",
-      XpYears: 3,
+      xpYears: 3,
     },
   ]
 }

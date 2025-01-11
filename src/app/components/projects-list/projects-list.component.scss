@@ -54,11 +54,65 @@
         display: flex;
         align-items: center;
         gap: 1.125rem;
-
     }
     &__project-stack-item {
         font-size: 1.125rem;
         line-height: 1.75rem;
     }
-    
+}
+
+@media screen and (min-width: 768px) {
+    .projects {
+        gap: 3.75rem;
+        &__header {
+            &-btn {
+                align-self: center;
+            }
+        }
+        &__title {
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+        }
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            flex-wrap: wrap;
+            gap: 3.75rem 1.5rem;
+        }
+        &__project {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            &-image {
+                img {
+                    width: 100%;
+                }
+            }
+            &-actions-btns {
+                display: flex;
+                align-items: center;
+                gap: 1.875rem;
+            }
+        }
+        &__project-name-and-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 0.438rem;
+        }
+        &__project-name {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        &__project-stack-list {
+            display: flex;
+            align-items: center;
+            gap: 1.125rem;
+        }
+        &__project-stack-item {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+    }
 }
