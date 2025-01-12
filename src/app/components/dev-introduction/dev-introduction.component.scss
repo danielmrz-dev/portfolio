@@ -92,3 +92,38 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .introduction {
+        max-width: 1110px;
+        margin: auto;
+        padding: 6rem 0 2rem 0;
+        &__profile-picture {
+            max-width: 445px;
+            top: 0;
+            right: 165px;
+        }
+        &__text {
+            gap: 2.688rem;
+            max-width: 100%;
+            .btn {
+                transform: translateY(0px);
+            }
+        }
+        &__title {
+            font-size: 5.5rem;
+            line-height: 5.5rem;
+            max-width: 14ch;
+            .nice-to {
+                display: inline;
+            }
+        }
+        &__description {
+            width: 40ch;
+        }
+        .circle {
+            right: 547px;
+            top: 525px;
+        }
+    }
+}

@@ -23,5 +23,10 @@ body {
         background-position: -270px  86px, right -65px top 550px, right -360px top 1047px;
         background-size: 530px 129px, 0 0, 530px 129px;
     }
+}
 
+@media screen and (min-width: 1024px) {
+    body {
+        background-position: -100px  133px, right -65px top 550px, right -239px top 1077px;
+    }
 }

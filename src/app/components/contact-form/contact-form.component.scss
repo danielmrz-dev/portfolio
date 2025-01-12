@@ -1,4 +1,5 @@
 @use "../../../scss/variables" as var;
+@use "../../../scss/mixins" as mix;
 
 .contact-form {
     display: flex;
@@ -33,13 +34,99 @@
         color: var.$White;
         border: none;
         border-bottom: 1px solid var.$White;
-        padding: .80rem;
+        padding: .80rem .80rem .80rem 1.5rem;
         font-size: 1rem;
         line-height: 26px;
-        max-width: 100%;
+        min-width: 100%;
+        cursor: pointer;
+        &-container {
+            position: relative;
+        }
+        &:focus {
+            border-color: var.$Green;
+            outline: none;
+        }
+    }
+    &__error-msg {
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        font-size: 0.75rem;
+        color: var.$Red;
+        transition: opacity .2s ease;
+    }
+    &__error-icon {
+        position: absolute;
+        right: 10px;
+        bottom: 10.5px;
+        transition: opacity .2s ease;
     }
     &__submit-btn {
+        border: none;
+        @include mix.buttonStyle();
+        margin: 0;
         align-self: flex-end;
         justify-self: end;
+    }
+    .error-border {
+        border-bottom: 1px solid var.$Red;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact-form {
+        gap: 3.125rem;
+        padding: 3.75rem 0 5rem;
+        margin: auto;
+        background-position: left -365px bottom 5px;
+        &__text {
+            max-width: 445px;
+            margin: auto;
+        }
+        &__title {
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+            letter-spacing: -2.05px;
+        }
+        &__description {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+        &__inputs {
+            min-width: 445px;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-form {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3.125rem;
+        padding: 5.25rem 10.313rem;
+        margin: auto;
+        background-position: left -205px bottom 38px;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 2rem;
+            max-width: 445px;
+            max-height: 327px;
+            margin: 0;
+        }
+        &__title {
+            font-size: 5.5rem;
+            line-height: 5.5rem;
+        }
+        &__inputs {
+            min-width: 445px;
+            max-height: 327px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
     }
 }

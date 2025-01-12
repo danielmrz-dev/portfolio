@@ -64,6 +64,7 @@
 @media screen and (min-width: 768px) {
     .projects {
         gap: 3.75rem;
+        padding: 1.5rem 1.5rem 6.25rem;
         &__header {
             &-btn {
                 align-self: center;
@@ -79,40 +80,31 @@
             flex-wrap: wrap;
             gap: 3.75rem 1.5rem;
         }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .projects {
+        gap: 3.75rem;
+        padding: 1.5rem 0 6.25rem;
+        max-width: 1110px;
+        margin: auto;
         &__project {
-            display: flex;
-            flex-direction: column;
-            gap: 1.25rem;
-            &-image {
-                img {
-                    width: 100%;
-                }
-            }
+            position: relative;
             &-actions-btns {
+                position: absolute;
+                background-color: var.$Dark-Grey-Opac;
+                width: 100%;
+                height: calc(100% - 5.438rem);
                 display: flex;
                 align-items: center;
-                gap: 1.875rem;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity .2s ease;
             }
         }
-        &__project-name-and-stack {
-            display: flex;
-            flex-direction: column;
-            gap: 0.438rem;
-        }
-        &__project-name {
-            font-size: 1.5rem;
-            line-height: 2rem;
-            text-transform: uppercase;
-            font-weight: 600;
-        }
-        &__project-stack-list {
-            display: flex;
-            align-items: center;
-            gap: 1.125rem;
-        }
-        &__project-stack-item {
-            font-size: 1.125rem;
-            line-height: 1.75rem;
-        }
     }
+}
+.hover {
+    opacity: 1;
 }

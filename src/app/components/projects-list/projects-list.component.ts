@@ -73,4 +73,13 @@ export class ProjectsListComponent {
       repository: ''
     },
   ]
+  projectHovered: number | null = null
+
+  onMouseEnter(projectHoveredIndex: number) {
+    this.projectHovered = projectHoveredIndex
+  }
+
+  onMouseLeave() {
+    this.projectHovered = null
+  }
 }

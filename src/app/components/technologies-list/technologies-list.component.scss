@@ -68,3 +68,18 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .technologies {
+        max-width: 1110px;
+        margin: auto;
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+            padding: 2rem 0;
+            gap: 3.25rem;
+        }
+        .divider {
+            margin: 15rem 0rem 2.5rem;
+        }
+    }
+}
