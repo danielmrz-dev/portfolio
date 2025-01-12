@@ -1,27 +1,53 @@
-# Portfolio
+# Frontend Mentor - Single-page developer portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+![Design preview for the Single-page developer portfolio coding challenge](./preview.jpg)
 
-## Development server
+# Frontend Mentor - Single-page developer portfolio solution
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This is a solution to the [Single-page developer portfolio challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Code scaffolding
+## Table of contents
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-## Build
+## Overview
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### The challenge
 
-## Running unit tests
+Users should be able to:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Receive an error message when the `form` is submitted if:
+  - Any field is empty
+  - The email address is not formatted correctly
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-## Running end-to-end tests
+### Screenshot
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![](./src/assets/images/screenshot.png)
 
-## Further help
+### Links
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Solution URL: [Link](https://your-solution-url.com)
+- Live Site URL: [Link](https://single-page-developer-portfolio-ten.vercel.app/)
+
+## My process
+
+### Built with
+
+- Angular
+- Reactive Forms
+- SASS
+- SASS Mixins
+- Mobile-first workflow
+
+## Author
+
+- Frontend Mentor - [@danielmrz-dev](https://www.frontendmentor.io/profile/danielmrz-dev)
+- LinkedIn - [@danielmrz-dev](https://www.linkedin.com/in/danielmrz-dev/)
