@@ -69,9 +69,10 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     .technologies {
-        max-width: 1110px;
+        max-width: 1062px;
+        padding-inline: 3rem;
         margin: auto;
         &__list {
             grid-template-columns: repeat(3, 1fr);

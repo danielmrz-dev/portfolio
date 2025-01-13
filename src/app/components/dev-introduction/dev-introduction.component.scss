@@ -93,15 +93,22 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     .introduction {
-        max-width: 1110px;
+        max-width: 1062px;
         margin: auto;
-        padding: 6rem 0 2rem 0;
+        padding: 6rem 3rem 2rem;
         &__profile-picture {
             max-width: 445px;
             top: 0;
-            right: 165px;
+            right: 50px;
+            @media screen and (min-width: 1070px) {
+                left: 53.1%;
+                right: auto;
+            }
+            @media screen and (min-width: 1450px) {
+                left: 52.5%;
+            }
         }
         &__text {
             gap: 2.688rem;
@@ -122,8 +129,14 @@
             width: 40ch;
         }
         .circle {
-            right: 547px;
+            right: 432px;
             top: 525px;
+            @media screen and (min-width: 1070px) {
+                right: 42%;
+            }
+            @media screen and (min-width: 1450px) {
+                right: 42.6%;
+            }
         }
     }
 }

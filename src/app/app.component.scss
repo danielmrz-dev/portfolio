@@ -21,11 +21,11 @@ footer {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     footer {
         padding-bottom: 3.875rem;
         .divider {
-            width: 1110px;
+            max-width: 1050px;
             margin: 6px auto 8px;
         }
     }
