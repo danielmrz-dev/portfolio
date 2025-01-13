@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Link](https://your-solution-url.com)
+- Solution URL: [Link](https://www.frontendmentor.io/solutions/single-page-developer-portfolio-built-w-angular-reactive-forms-sass-JwiMmzgsQ5)
 - Live Site URL: [Link](https://single-page-developer-portfolio-ten.vercel.app/)
 
 ## My process
